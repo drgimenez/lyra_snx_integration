@@ -72,26 +72,26 @@ This diagram was obtained from the official Lyra documentation on their [website
 The **Option Market** contract it's the entry point to the protocol and to the specific market you want to connect to. In the case of this solution, the contract **ETH Option Market** was used
 The **Option Token** contract can be used to retrieve valuable information about our position in the system since it manages the NFTs that the system delivers on behalf of the trades made.
 
-![ETH Option Market](https://optimistic.etherscan.io/address/0x59c671B1a1F261FB2192974B43ce1608aeFd328E#readContract)
-![ETH Option Token](https://optimistic.etherscan.io/address/0xa48c5363698cef655d374675faf810137a1b2ec0)
+[ETH Option Market](https://optimistic.etherscan.io/address/0x59c671B1a1F261FB2192974B43ce1608aeFd328E#readContract)
+[ETH Option Token](https://optimistic.etherscan.io/address/0xa48c5363698cef655d374675faf810137a1b2ec0)
 
 ### Synthetix Protocol
 
 ##### Architecture
 
-![Sinthetix sETHPERP Market Diagram](<assets/Sinthetix sETHPERP Market Diagram.jpg>)
+[Sinthetix sETHPERP Market Diagram](<assets/Sinthetix sETHPERP Market Diagram.jpg>)
 
 The protocol has 3 main access points
 
-1. **PerpsV2MarketSettings:** ![0x649F44CAC3276557D03223Dbf6395Af65b11c11c](https://optimistic.etherscan.io/address/0x649F44CAC3276557D03223Dbf6395Af65b11c11c#code)
-2. **FuturesMarketManager:** ![0xd30bdFd7e7a65fE109D5dE1D4e95F3B800FB7463](https://optimistic.etherscan.io/address/0xd30bdFd7e7a65fE109D5dE1D4e95F3B800FB7463#code)
-3. **ProxyPerpsV2** ![0x2B3bb4c683BFc5239B029131EEf3B1d214478d93](https://optimistic.etherscan.io/address/0x2b3bb4c683bfc5239b029131eef3b1d214478d93#code)
+1. **PerpsV2MarketSettings:** [0x649F44CAC3276557D03223Dbf6395Af65b11c11c](https://optimistic.etherscan.io/address/0x649F44CAC3276557D03223Dbf6395Af65b11c11c#code)
+2. **FuturesMarketManager:** [0xd30bdFd7e7a65fE109D5dE1D4e95F3B800FB7463](https://optimistic.etherscan.io/address/0xd30bdFd7e7a65fE109D5dE1D4e95F3B800FB7463#code)
+3. **ProxyPerpsV2** [0x2B3bb4c683BFc5239B029131EEf3B1d214478d93](https://optimistic.etherscan.io/address/0x2b3bb4c683bfc5239b029131eef3b1d214478d93#code)
 
 **ProxyPerpsV2:** It is a proxy contract that serves as a gateway to the ETH futures market used in this solution.. All interaction with the market must be done through this proxy contract.
 To interact with the market in this protocol, it is enough to instantiate this proxy with the **IPerpsV2MarketConsolidated** interface that gathers all the necessary interactions.
 
-![GitHub](https://github.com/Synthetixio/synthetix/blob/aefaae79a22a542d5f15c9271cd2f908974ba56a/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L7)
-![Documentation](https://docs.synthetix.io/integrations/perps-integration-guide/technical-integration)
+[GitHub](https://github.com/Synthetixio/synthetix/blob/aefaae79a22a542d5f15c9271cd2f908974ba56a/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L7)
+[Documentation](https://docs.synthetix.io/integrations/perps-integration-guide/technical-integration)
 
 **Note:** It is important to highlight that the identification of contracts, currencies and other functionalities is done based on the bytes32 encoding.
 For example: '0x73555344' is 'sUSD' and '0x73455448' is 'sETH'
@@ -185,24 +185,24 @@ The tests in this solution are not designed to be complete, only the main functi
 
 ##### Lyra Protocol
 
-- ![Website](https://www.lyra.finance/)
-- ![Documentation](https://docs.lyra.finance/developers/contracts)
-- ![GitHub](https://github.com/lyra-finance/lyra-protocol)
+- [Website](https://www.lyra.finance/)
+- [Documentation](https://docs.lyra.finance/developers/contracts)
+- [GitHub](https://github.com/lyra-finance/lyra-protocol)
 
 ##### Synthetix Protocol
 
-- ![Website](https://synthetix.io/)
-- ![Documentation](https://docs.synthetix.io/synthetix-protocol/readme)
-- ![GitHub](https://github.com/Synthetixio/synthetix/tree/v2.93.1)
-- ![SIP-279: Perps v2 Specification](https://sips.synthetix.io/sips/sip-279/)
+- [Website](https://synthetix.io/)
+- [Documentation](https://docs.synthetix.io/synthetix-protocol/readme)
+- [GitHub](https://github.com/Synthetixio/synthetix/tree/v2.93.1)
+- [SIP-279: Perps v2 Specification](https://sips.synthetix.io/sips/sip-279/)
 
 ##### OpenZeppelin
 
-- ![Documentation](https://docs.openzeppelin.com/contracts/4.x/)
-- ![GitHub](https://github.com/OpenZeppelin/openzeppelin-contracts)
+- [Documentation](https://docs.openzeppelin.com/contracts/4.x/)
+- [GitHub](https://github.com/OpenZeppelin/openzeppelin-contracts)
 
 ##### Optimism
 
-- ![Explorer](https://optimistic.etherscan.io/)
+- [Explorer](https://optimistic.etherscan.io/)
 
 Thanks for reading!
