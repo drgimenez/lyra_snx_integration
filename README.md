@@ -3,11 +3,11 @@
 
 ## Objective
 
-This repository presents two adapters that allow interaction with the Lyra and Synthetix protocols in order to be able to execute operations on the markets of both platforms in a compensatory way.
+This repository presents an integration protocol with the Lyra and Synthetix protocols to be able to execute operations in the markets of both platforms in order to maintain delta neutral.
 
 ## Problem description
 
-Two target tasks are defined for this implementation
+Three target tasks are defined for this implementation
 
 * **Task 1:** Being able to open positions on the Lyra platform based on a strike id and an amount
 * **Task 2:** Being able to apply hedging operations on the Synthetix platform in order to offset the operation carried out in Lyra and maintain a neutral delta
