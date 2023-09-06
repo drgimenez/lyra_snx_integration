@@ -1,16 +1,12 @@
-# -------------------------------------------------------------------------------------------
 # Lyra and Synthetix Protocols Integration
-# -------------------------------------------------------------------------------------------
 ##### Author: David Gimenez Gutierrez
 
-## -------------------------------------------------------------------------------------------
 ## Objective
-## -------------------------------------------------------------------------------------------
+
 This repository presents two adapters that allow interaction with the Lyra and Synthetix protocols in order to be able to execute operations on the markets of both platforms in a compensatory way.
 
-## -------------------------------------------------------------------------------------------
 ## Problem description
-## -------------------------------------------------------------------------------------------
+
 Two target tasks are defined for this implementation
 
 * **Task 1:** Being able to open positions on the Lyra platform based on a strike id and an amount
@@ -19,9 +15,7 @@ Two target tasks are defined for this implementation
 
 * **Colorectal task:** It will be necessary to fork Optimism's main network to be able to operate locally with these two protocols and tests operations
 
-## -------------------------------------------------------------------------------------------
 ## Solution description
-## -------------------------------------------------------------------------------------------
 
 ### Solution architecture
 
@@ -66,9 +60,7 @@ It is the adapter used by the protocol to expose information from its oracles. I
 * **GWAVOracle:** 
 Synthetix is ​​a very complex library, since it makes extreme use of contract abstraction through the proxy pattern, but to make things easier for us, the developers developed this Interface that offers in one place all the functionality needed to operate with its protocol. Below is the complete description of the operation of the protocol.
 
-## -------------------------------------------------------------------------------------------
 ## Analysis of integrated protocols
-## -------------------------------------------------------------------------------------------
 
 ### Lyra Protocolo
 
@@ -104,9 +96,7 @@ To interact with the market in this protocol, it is enough to instantiate this p
 **Note:** It is important to highlight that the identification of contracts, currencies and other functionalities is done based on the bytes32 encoding.
 For example: '0x73555344' is 'sUSD' and '0x73455448' is 'sETH'
 
-## -------------------------------------------------------------------------------------------
 ## Repository description
-## -------------------------------------------------------------------------------------------
 
 ### Folders and files
 
@@ -174,9 +164,7 @@ For this solution it was decided to cast the Lyra protocol repository directly a
 
 **Note:** You may notice that the solution did not include the **@lyrafinance/lyra-js library** library, this was because at the time of development the library did not contain the latest updates in its interfaces
 
-## -------------------------------------------------------------------------------------------
 ## Tests and coverage
-## -------------------------------------------------------------------------------------------
 
 #### Test scripts
 
@@ -193,9 +181,7 @@ This is the test script itself. Perform tests on the two main functionalities de
 
 The tests in this solution are not designed to be complete, only the main functionalities are tested and not exhaustively.
 
-## -------------------------------------------------------------------------------------------
 ## Reference links
-## -------------------------------------------------------------------------------------------
 
 ##### Lyra Protocol
 
